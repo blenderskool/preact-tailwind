@@ -1,8 +1,7 @@
 import { h } from 'preact';
-import style from './style.css';
 
 const Home = () => (
-	<div class={style.home}>
+	<div class="w-full py-14 px-5">
 		<h1>Home</h1>
 		<p>This is the Home component.</p>
 	</div>

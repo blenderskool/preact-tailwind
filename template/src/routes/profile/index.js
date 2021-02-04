@@ -1,6 +1,5 @@
 import { h } from 'preact';
-import {useEffect, useState} from "preact/hooks";
-import style from './style.css';
+import {useEffect, useState} from 'preact/hooks';
 
 // Note: `user` comes from the URL, courtesy of our router
 const Profile = ({ user }) => {
@@ -13,14 +12,14 @@ const Profile = ({ user }) => {
 	}, []);
 
 	return (
-		<div class={style.profile}>
+		<div class="w-full py-14 px-5">
 			<h1>Profile: {user}</h1>
 			<p>This is the user profile for a user named { user }.</p>
 
 			<div>Current time: {new Date(time).toLocaleString()}</div>
 
 			<p>
-				<button onClick={() => setCount((count) => count + 1)}>Click Me</button>
+				<button class="bg-gray-200 border border-gray-400 px-1" onClick={() => setCount((count) => count + 1)}>Click Me</button>
 				{' '}
 				Clicked {count} times.
 			</p>
