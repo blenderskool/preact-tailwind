@@ -1,15 +1,13 @@
-# preact-default-boilerplate
+# Preact with Tailwind CSS v2 template
 
-![Lighthouse-Badge](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen.svg)
-
-## Documentation
-- This is the default template for [preact-cli](https://github.com/developit/preact-cli).
-- [For Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
+This template can be used with [preact-cli](https://github.com/preactjs/preact-cli) to scaffold a Preact + Tailwind CSS v2 project. Along with Tailwind CSS, this template
+also configures PurgeCSS in production build to remove unused tailwind classes.
+Note: Since Preact CLI has an older version of PostCSS configured, it makes use of [Tailwind PostCSS 7 compatibility build](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build)
 
 ## Usage
 
 ``` bash
-$ npx preact-cli create default my-project
+$ npx preact-cli create blenderskool/preact-tailwind my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -31,16 +29,8 @@ Development server runs on port `8080`. If the default port is already in use on
 
 ### How to Test
 
-The `default` template provides a basic test setup with Jest, Enzyme, and [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure). You are free to change Enzyme with any other testing library (eg. [Preact Testing Library](https://testing-library.com/docs/preact-testing-library/intro)).
+The template provides a basic test setup with Jest, Enzyme, and [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure). You are free to change Enzyme with any other testing library (eg. [Preact Testing Library](https://testing-library.com/docs/preact-testing-library/intro)).
 
 You can run all additional Jest CLI commands with the `npm run test` command as described in the [Jest docs](https://facebook.github.io/jest/docs/en/cli.html#using-with-npm-scripts). For example, running jest in watch mode would be :
 
 - `npm run test -- --watch` instead of  `jest --watch `
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `preact-cli`:
-
-``` bash
-preact create username/repo my-project
-```
